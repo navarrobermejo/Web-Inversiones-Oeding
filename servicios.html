@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Servicios académicos, inversiones e inmobiliarios - Inversiones Oeding SAS">
+  <title>Servicios - Inversiones Oeding SAS</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <i class="bi bi-building me-2 fs-4"></i>
+        <span class="fw-bold">Inversiones Oeding</span>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO BANNER ========== -->
+  <section class="hero-section" style="min-height: 400px;">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content text-center">
+      <h1 class="display-4 fw-bold text-white mb-3">Nuestros Servicios</h1>
+      <p class="lead text-white">
+        Soluciones integrales para impulsar tu crecimiento académico, financiero e inmobiliario
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== INTRODUCCIÓN ========== -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="display-6 fw-bold mb-4">¿Qué ofrecemos?</h2>
+      <p class="lead text-muted mx-auto" style="max-width: 800px;">
+        En <strong>Inversiones Oeding SAS</strong> nos especializamos en tres áreas fundamentales, 
+        ofreciendo asesoría profesional y soluciones personalizadas para cada necesidad.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== SERVICIOS ACADÉMICOS ========== -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="service-icon mb-4" style="width: 100px; height: 100px;">
+            <i class="bi bi-book-fill" style="font-size: 3rem;"></i>
+          </div>
+          <h2 class="display-6 fw-bold mb-3">Servicios Académicos</h2>
+          <p class="lead text-muted mb-4">
+            Apoyamos el desarrollo educativo mediante asesorías especializadas, programas innovadores y proyectos institucionales que transforman la educación.
+          </p>
+          
+          <div class="accordion" id="academicosAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#academic1">
+                  <i class="bi bi-mortarboard-fill me-2"></i>
+                  Asesoría Educativa
+                </button>
+              </h2>
+              <div id="academic1" class="accordion-collapse collapse show" data-bs-parent="#academicosAccordion">
+                <div class="accordion-body">
+                  Acompañamiento en la implementación de proyectos educativos institucionales, 
+                  diseño curricular y estrategias pedagógicas innovadoras.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#academic2">
+                  <i class="bi bi-laptop me-2"></i>
+                  Capacitación Docente
+                </button>
+              </h2>
+              <div id="academic2" class="accordion-collapse collapse" data-bs-parent="#academicosAccordion">
+                <div class="accordion-body">
+                  Formaciones en herramientas digitales, metodologías activas y certificaciones 
+                  de Google for Education para el desarrollo profesional docente.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#academic3">
+                  <i class="bi bi-gear-fill me-2"></i>
+                  Soporte Técnico Institucional
+                </button>
+              </h2>
+              <div id="academic3" class="accordion-collapse collapse" data-bs-parent="#academicosAccordion">
+                <div class="accordion-body">
+                  Asistencia en el mantenimiento de equipos tecnológicos, gestión de redes 
+                  y software institucional para garantizar un entorno educativo óptimo.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800" 
+               alt="Educación y tecnología" 
+               class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INVERSIONES ========== -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+          <div class="service-icon mb-4" style="width: 100px; height: 100px;">
+            <i class="bi bi-graph-up-arrow" style="font-size: 3rem;"></i>
+          </div>
+          <h2 class="display-6 fw-bold mb-3">Inversiones</h2>
+          <p class="lead text-muted mb-4">
+            Asesoría profesional y gestión estratégica de inversiones para garantizar un 
+            crecimiento financiero sostenible y rentable.
+          </p>
+          
+          <ul class="list-unstyled">
+            <li class="mb-3 d-flex">
+              <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
+              <div>
+                <h5 class="mb-1">Análisis de Mercado</h5>
+                <p class="text-muted mb-0">Estudios detallados de oportunidades de inversión</p>
+              </div>
+            </li>
+            <li class="mb-3 d-flex">
+              <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
+              <div>
+                <h5 class="mb-1">Gestión de Portafolios</h5>
+                <p class="text-muted mb-0">Administración profesional de activos financieros</p>
+              </div>
+            </li>
+            <li class="mb-3 d-flex">
+              <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
+              <div>
+                <h5 class="mb-1">Planificación Financiera</h5>
+                <p class="text-muted mb-0">Estrategias personalizadas según tus objetivos</p>
+              </div>
+            </li>
+            <li class="mb-3 d-flex">
+              <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
+              <div>
+                <h5 class="mb-1">Evaluación de Riesgos</h5>
+                <p class="text-muted mb-0">Análisis exhaustivo para decisiones informadas</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-6 order-lg-1">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" 
+               alt="Análisis financiero" 
+               class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INMOBILIARIOS ========== -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="service-icon mb-4" style="width: 100px; height: 100px;">
+            <i class="bi bi-house-door-fill" style="font-size: 3rem;"></i>
+          </div>
+          <h2 class="display-6 fw-bold mb-3">Servicios Inmobiliarios</h2>
+          <p class="lead text-muted mb-4">
+            Acompañamiento integral en la compra, venta y administración de bienes raíces, 
+            con transparencia y profesionalismo.
+          </p>
+          
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body text-center p-4">
+                  <i class="bi bi-cash-coin text-primary display-5 mb-3"></i>
+                  <h5>Compra y Venta</h5>
+                  <p class="text-muted small mb-0">Asesoría completa en transacciones inmobiliarias</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body text-center p-4">
+                  <i class="bi bi-clipboard-data text-success display-5 mb-3"></i>
+                  <h5>Administración</h5>
+                  <p class="text-muted small mb-0">Gestión profesional de propiedades</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body text-center p-4">
+                  <i class="bi bi-search text-info display-5 mb-3"></i>
+                  <h5>Avalúos</h5>
+                  <p class="text-muted small mb-0">Valoración técnica de inmuebles</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body text-center p-4">
+                  <i class="bi bi-file-text text-warning display-5 mb-3"></i>
+                  <h5>Asesoría Legal</h5>
+                  <p class="text-muted small mb-0">Apoyo en trámites y documentación</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800" 
+               alt="Propiedades inmobiliarias" 
+               class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CALL TO ACTION ========== -->
+  <section class="py-5 bg-primary text-white">
+    <div class="container text-center">
+      <h2 class="display-6 fw-bold mb-3">¿Interesado en nuestros servicios?</h2>
+      <p class="lead mb-4">Contáctanos para recibir asesoría personalizada y sin compromiso</p>
+      <a href="contacto.html" class="btn btn-warning btn-lg me-3">
+        <i class="bi bi-envelope-fill me-2"></i>
+        Contáctanos
+      </a>
+      <a href="nosotros.html" class="btn btn-outline-light btn-lg">
+        <i class="bi bi-info-circle me-2"></i>
+        Conocer más
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-primary-custom text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <h5 class="mb-3">
+            <i class="bi bi-building me-2"></i>Inversiones Oeding SAS
+          </h5>
+          <p class="mb-2">
+            <i class="bi bi-geo-alt-fill me-2"></i>
+            Carrera 62 # 75-156, Barranquilla
+          </p>
+          <p class="mb-2">
+            <i class="bi bi-envelope-fill me-2"></i>
+            info@inversionesoeding.com
+          </p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-0">&copy; 2025 Inversiones Oeding SAS</p>
+          <p class="mb-0">Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

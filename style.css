@@ -1,0 +1,323 @@
+/* ===================================================================
+   INVERSIONES OEDING SAS - HOJA DE ESTILOS PRINCIPAL
+   Autor: [Tu nombre]
+   Fecha: 2025
+   Descripción: Estilos personalizados para complementar Bootstrap 5
+   =================================================================== */
+
+/* ===== VARIABLES DE COLORES ===== */
+:root {
+  --color-primary: #003366;
+  --color-primary-dark: #002244;
+  --color-secondary: #0059b3;
+  --color-accent: #ffd700;
+  --color-light: #f9fafb;
+  --color-dark: #333333;
+}
+
+/* ===== ESTILOS GENERALES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", "Poppins", Arial, sans-serif;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Suaviza el scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== NAVBAR PERSONALIZADO ===== */
+.bg-primary-custom {
+  background-color: var(--color-primary) !important;
+}
+
+.navbar-dark .navbar-brand {
+  font-size: 1.4rem;
+  transition: transform 0.3s ease;
+}
+
+.navbar-dark .navbar-brand:hover {
+  transform: scale(1.05);
+  color: var(--color-accent) !important;
+}
+
+.navbar-dark .nav-link {
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-dark .nav-link:hover {
+  color: var(--color-accent) !important;
+}
+
+/* Efecto subrayado animado en links */
+.navbar-dark .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-dark .nav-link:hover::after,
+.navbar-dark .nav-link.active::after {
+  width: 80%;
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+  position: relative;
+  min-height: 600px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+}
+
+/* Overlay oscuro sobre la imagen de fondo */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 51, 102, 0.9) 0%, rgba(0, 89, 179, 0.85) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Animaciones del hero */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.animate-fade-in-delay {
+  animation: fadeIn 0.8s ease-out 0.2s backwards;
+}
+
+.animate-fade-in-delay-2 {
+  animation: fadeIn 0.8s ease-out 0.4s backwards;
+}
+
+.animate-slide-in {
+  animation: slideIn 1s ease-out 0.3s backwards;
+}
+
+/* Botones en el hero */
+.hero-section .btn {
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.hero-section .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== CARDS DE SERVICIOS ===== */
+.service-card {
+  transition: all 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: rotate(360deg) scale(1.1);
+}
+
+/* ===== TEXTOS Y TIPOGRAFÍA ===== */
+.text-primary-custom {
+  color: var(--color-primary) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* ===== FEATURE LIST (Por qué elegirnos) ===== */
+.feature-icon-sm {
+  font-size: 1.5rem;
+}
+
+.feature-list h5 {
+  color: var(--color-dark);
+  font-weight: 600;
+}
+
+/* ===== FORMULARIOS ===== */
+.form-control:focus {
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 0.2rem rgba(0, 89, 179, 0.25);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: var(--color-primary);
+  margin-top: 60px;
+}
+
+footer h5 {
+  color: white;
+  font-weight: 600;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 992px) {
+  .hero-section {
+    min-height: 500px;
+    padding: 60px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 400px;
+    padding: 40px 0;
+    background-attachment: scroll;
+  }
+
+  .hero-section h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-section .lead {
+    font-size: 1rem;
+  }
+
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+}
+
+/* ===== UTILIDADES PERSONALIZADAS ===== */
+.shadow-custom {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-custom {
+  border-radius: 15px;
+}
+
+/* Espaciado adicional */
+.py-6 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* ===== ANIMACIONES HOVER GENERALES ===== */
+.card, .btn, img {
+  transition: all 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+/* ===== SCROLLBAR PERSONALIZADO (opcional) ===== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-dark);
+}
